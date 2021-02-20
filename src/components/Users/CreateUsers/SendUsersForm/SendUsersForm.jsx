@@ -8,8 +8,8 @@ const SendUsersForm = (props) => {
   const dispatch = useDispatch();
 
   const onReset = () => {
-    props.showModal();
     form.resetFields();
+    props.showModal();
   };
   const sendSubmitHandler = (e) => {
     dispatch(addAsyncUsers(e));
