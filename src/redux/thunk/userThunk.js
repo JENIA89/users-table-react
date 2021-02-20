@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { addUsers, getUsers } from '../actions/userActions';
-const api = 'http://localhost:3001/db.json';
+const api = '/db.json';
 
 export const getAsyncUsers = () => {
   return (dispatch) => {
