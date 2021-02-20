@@ -26,7 +26,7 @@ const SendUsersForm = (props) => {
           span: 7,
         }}
         wrapperCol={{
-          span: 18,
+          span: 15,
         }}
       >
         <Form.Item
@@ -62,7 +62,7 @@ const SendUsersForm = (props) => {
         <Button
           type='primary'
           htmlType='submit'
-          style={{ marginRight: '305px' }}
+          style={{ marginRight: '270px' }}
         >
           Создать
         </Button>

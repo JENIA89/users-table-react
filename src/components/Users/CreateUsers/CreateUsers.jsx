@@ -11,7 +11,7 @@ const CreateUsers = () => {
 
   return (
     <>
-      <Button onClick={showModal} style={{ margin: '10px 0 10px 60px' }}>
+      <Button onClick={showModal} style={{ margin: '10px 0 10px 50px' }}>
         Добавить сотрудника
       </Button>
       <Modal

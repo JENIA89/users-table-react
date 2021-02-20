@@ -43,7 +43,11 @@ const Users = () => {
       {users.length === 0 ? (
         <Spinner />
       ) : (
-        <Table columns={columns} dataSource={users.data} />
+        <Table
+          columns={columns}
+          dataSource={users.data}
+          style={{ margin: '0 30px 0 30px' }}
+        />
       )}
     </>
   );
