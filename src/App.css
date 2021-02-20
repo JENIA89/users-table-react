@@ -1,0 +1,4 @@
+.ant-dropdown.ant-dropdown-placement-bottomRight.slide-up-enter.slide-up-enter-prepare.slide-up {
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
