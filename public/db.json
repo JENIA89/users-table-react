@@ -175,6 +175,30 @@
       "group": "Руководство",
       "db.jsonId": "data",
       "id": 30
+    },
+    {
+      "name": "Петров Анатолий",
+      "group": "Отдел продаж",
+      "db.jsonId": "data",
+      "id": 31
+    },
+    {
+      "name": "Демидов Петр",
+      "group": "Склад",
+      "db.jsonId": "data",
+      "id": 32
+    },
+    {
+      "name": "Пенкин Иосиф",
+      "group": "Склад",
+      "db.jsonId": "data",
+      "id": 33
+    },
+    {
+      "name": "Сидоров Егор",
+      "group": "Склад",
+      "db.jsonId": "data",
+      "id": 34
     }
   ]
 }
