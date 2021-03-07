@@ -21,7 +21,6 @@ export const addAsyncUsers = (data) => {
       .then((response) => {
         const data = response.data;
         dispatch(addUsers(data));
-        console.log(data);
       })
       .catch((error) => console.log(error));
   };
