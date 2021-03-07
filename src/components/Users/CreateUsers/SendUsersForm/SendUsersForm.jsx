@@ -1,6 +1,7 @@
 import { Form, Input, Button, Select } from 'antd';
 import { useDispatch } from 'react-redux';
 import { addAsyncUsers } from '../../../../redux/thunk/userThunk';
+import { usersGroup } from '../../usersGroup';
 const { Option } = Select;
 
 const SendUsersForm = (props) => {
@@ -52,10 +53,11 @@ const SendUsersForm = (props) => {
           ]}
         >
           <Select placeholder='Выберите отдел'>
-            <Option value='Склад'>Склад</Option>
-            <Option value='Отдел кадров'>Отдел кадров</Option>
-            <Option value='Отдел продаж'>Отдел продаж</Option>
-            <Option value='Руководство'>Руководство</Option>
+            {usersGroup.map((item) => (
+              <Option key={item.id} value={item.value}>
+                {item.text}
+              </Option>
+            ))}
           </Select>
         </Form.Item>
 

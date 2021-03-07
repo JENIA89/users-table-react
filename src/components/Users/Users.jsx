@@ -4,6 +4,7 @@ import { Table } from 'antd';
 import { getAsyncUsers } from '../../redux/thunk/userThunk';
 import CreateUsers from './CreateUsers/CreateUsers';
 import Spinner from '../Spinner/Spinner';
+import { usersGroup } from './usersGroup';
 
 const Users = () => {
   const users = useSelector(({ users }) => users.data);
@@ -18,19 +19,12 @@ const Users = () => {
       title: 'Имя',
       dataIndex: 'name',
       key: 'name',
-      sorter: (a, b) => a.name.length - b.name.length,
-      ellipsis: true,
     },
     {
       title: 'Отдел',
       dataIndex: 'group',
       key: 'id',
-      filters: [
-        { text: 'Склад', value: 'Склад' },
-        { text: 'Отдел кадров', value: 'Отдел кадров' },
-        { text: 'Руководство', value: 'Руководство' },
-        { text: 'Отдел продаж', value: 'Отдел продаж' },
-      ],
+      filters: usersGroup,
       onFilter: (value, { group }) => group === value,
       sorter: (a, b) => a.group.length - b.group.length,
       ellipsis: true,

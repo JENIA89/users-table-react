@@ -1,6 +1,6 @@
 import axios from 'axios';
+import { api } from '../../api/api';
 import { addUsers, getUsers } from '../actions/userActions';
-const api = '/db.json';
 
 export const getAsyncUsers = () => {
   return (dispatch) => {
@@ -21,6 +21,7 @@ export const addAsyncUsers = (data) => {
       .then((response) => {
         const data = response.data;
         dispatch(addUsers(data));
+        console.log(data);
       })
       .catch((error) => console.log(error));
   };
